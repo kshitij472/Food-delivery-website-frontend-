@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShivKrupa ChaatHub - Authentic Indian Street Food</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Stall Banner Background -->
+    <div class="stall-banner">
+        <img src="https://source.unsplash.com/random/1920x600/?foodstall,indianstreetfood" alt="Our Food Stall">
+        <div class="banner-overlay"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span>ShivKrupa</span> ChaatHub</h1>
+            </div>
+            <nav>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reservation">Reserve</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!-- Auth Buttons -->
+<div class="auth-buttons">
+  <button id="openLogin">Login</button>
+  <button id="openSignup">Sign Up</button>
+</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Experience the <span>Flavor Explosion</span> of Indian Street Food</h2>
+                <p>Authentic Panipuri, Bhel, Pav Bhaji, chinese & More - Made Fresh Daily!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">Explore Menu</a>
+                    <a href="#reservation" class="btn-secondary">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Delicious Menu</h2>
+                <p>Handcrafted with love and authentic ShivKrupas</p>
+            </div>
+            
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="puri">Puri Specials</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="meals">Meals</button>
+                <button class="filter-btn" data-filter="chinese">Chinese Special</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Panipuri -->
+                <div class="menu-item" data-category="puri">
+                    <div class="menu-img">
+                        <img src="Panipuri.jpg" alt="Panipuri">
+                        <div class="quick-view" data-id="1">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Panipuri</h3>
+                        <p class="item-desc">Crispy puris filled with spicy tamarind water, potatoes, and chickpeas.</p>
+                        <div class="price-add">
+                            <span class="price">₹10</span>
+                            <button class="add-to-cart" data-id="1" data-name="Panipuri" data-price="10">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dahipuri -->
+                <div class="menu-item" data-category="puri">
+                    <div class="menu-img">
+                        <img src="Dahipuri.webp" alt="Dahipuri">
+                        <div class="quick-view" data-id="2">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Dahipuri</h3>
+                        <p class="item-desc">Puris topped with creamy yogurt, chutneys, sev, and ShivKrupas.</p>
+                        <div class="price-add">
+                            <span class="price">₹30</span>
+                            <button class="add-to-cart" data-id="2" data-name="Dahipuri" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sevpuri -->
+                <div class="menu-item" data-category="puri">
+                    <div class="menu-img">
+                        <img src="sevpuri.jpg" alt="Sevpuri">
+                        <div class="quick-view" data-id="3">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Sevpuri</h3>
+                        <p class="item-desc">Crunchy puris layered with potatoes, onions, chutneys, and topped with sev.</p>
+                        <div class="price-add">
+                            <span class="price">₹30</span>
+                            <button class="add-to-cart" data-id="3" data-name="Sevpuri" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bhel -->
+                <div class="menu-item" data-category="snacks">
+                    <div class="menu-img">
+                        <img src="bhel.jpeg" alt="Bhel">
+                        <div class="quick-view" data-id="4">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bhel Puri</h3>
+                        <p class="item-desc">Puffed rice mixed with vegetables, tangy tamarind chutney, and sev.</p>
+                        <div class="price-add">
+                            <span class="price">₹30</span>
+                            <button class="add-to-cart" data-id="4" data-name="Bhel Puri" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khasta -->
+                <div class="menu-item" data-category="snacks">
+                    <div class="menu-img">
+                        <img src="khatsa.jpg" alt="Khasta">
+                        <div class="quick-view" data-id="5">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Khasta Kachori</h3>
+                        <p class="item-desc">Flaky, crispy pastry filled with spicy lentils, served with chutney.</p>
+                        <div class="price-add">
+                            <span class="price">₹30</span>
+                            <button class="add-to-cart" data-id="5" data-name="Khasta Kachori" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sukhi Puri -->
+                <div class="menu-item" data-category="snacks">
+                    <div class="menu-img">
+                        <img src="sukhi.jpg" alt="Sukhi Puri">
+                        <div class="quick-view" data-id="6">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Sukhi Puri</h3>
+                        <p class="item-desc">Dry version of puri chaat with special masala, perfect for takeaways.</p>
+                        <div class="price-add">
+                            <span class="price">₹30</span>
+                            <button class="add-to-cart" data-id="6" data-name="Sukhi Puri" data-price="30">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chinese Category Items -->
+                <!-- Noodles -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="noodles.jpg" alt="Noodles">
+                        <div class="quick-view" data-id="10">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Veg Noodles</h3>
+                        <p class="item-desc">Stir-fried noodles with fresh vegetables in our special sauce.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="10" data-name="Veg Noodles" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veg Manchurian -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="manchurian.jpg" alt="Veg Manchurian">
+                        <div class="quick-view" data-id="11">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Veg Manchurian</h3>
+                        <p class="item-desc">Deep-fried vegetable balls tossed in spicy garlic sauce.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="11" data-name="Veg Manchurian" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manchow Soup -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="manchow.jpg" alt="Manchow Soup">
+                        <div class="quick-view" data-id="12">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Manchow Soup</h3>
+                        <p class="item-desc">Hot and spicy soup with vegetables and crispy noodles.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="12" data-name="Manchow Soup" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paneer Chilli -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="paneer.jpeg" alt="Paneer Chilli">
+                        <div class="quick-view" data-id="13">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Paneer Chilli</h3>
+                        <p class="item-desc">Soft paneer cubes tossed with bell peppers in spicy sauce.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="13" data-name="Paneer Chilli" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lollipop -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="loli.jpg" alt="Lollipop">
+                        <div class="quick-view" data-id="14">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Veg Lollipop</h3>
+                        <p class="item-desc">Tender chicken drumettes marinated and fried to perfection.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="14" data-name="Chicken Lollipop" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schezwan Fried Rice -->
+                <div class="menu-item" data-category="chinese">
+                    <div class="menu-img">
+                        <img src="fried rice.jpg" alt="Schezwan Fried Rice">
+                        <div class="quick-view" data-id="15">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Schezwan Fried Rice</h3>
+                        <p class="item-desc">Fragrant rice stir-fried with vegetables in spicy schezwan sauce.</p>
+                        <div class="price-add">
+                            <span class="price">₹60</span>
+                            <button class="add-to-cart" data-id="15" data-name="Schezwan Fried Rice" data-price="60">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pav Bhaji -->
+                <div class="menu-item" data-category="meals">
+                    <div class="menu-img">
+                        <img src="pav.jpg" alt="Pav Bhaji">
+                        <div class="quick-view" data-id="8">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pav Bhaji</h3>
+                        <p class="item-desc">Spicy mashed vegetables served with buttered pav, a Mumbai favorite.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="8" data-name="Pav Bhaji" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masala Pav (New Item) -->
+                <div class="menu-item" data-category="meals">
+                    <div class="menu-img">
+                        <img src="masala.jpeg" alt="Masala Pav">
+                        <div class="quick-view" data-id="16">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Masala Pav</h3>
+                        <p class="item-desc">Buttered pav buns served with spicy potato masala and chutneys.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="16" data-name="Masala Pav" data-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pulav -->
+                <div class="menu-item" data-category="meals">
+                    <div class="menu-img">
+                        <img src="pulav.jpg" alt="Pulav">
+                        <div class="quick-view" data-id="9">Quick View</div>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Veg Pulav</h3>
+                        <p class="item-desc">Fragrant basmati rice cooked with vegetables and aromatic ShivKrupas.</p>
+                        <div class="price-add">
+                            <span class="price">₹50</span>
+                            <button class="add-to-cart" data-id="9" data-name="Veg Pulav" data-price="80">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://source.unsplash.com/random/600x500/?streetfoodindia" alt="Our Stall">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, ShivKrupa ChaatHub began as a small street cart with a big dream: to bring authentic Indian street food to everyone. What started with just panipuri has grown into a beloved local establishment serving a variety of delicious snacks and meals.</p>
+                    <p>Every dish is prepared with the freshest ingredients and traditional recipes passed down through generations. Our secret? Love, patience, and the perfect blend of ShivKrupas!</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Daily Orders</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>12</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reserve Your Table</h2>
+                <p>Enjoy our delicious food in a comfortable setting</p>
+            </div>
+            
+            <div class="reservation-container">
+                <div class="reservation-form">
+                    <form id="tableReservationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8 People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="special">Special Requests</label>
+                            <textarea id="special" name="special" rows="3" placeholder="Any special requests or dietary requirements?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Reserve Table</button>
+                    </form>
+                </div>
+                
+                <div class="reservation-info">
+                    <h3>Why Reserve With Us?</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Priority seating during busy hours</li>
+                        <li><i class="fas fa-check-circle"></i> Complimentary papad for reserved guests</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated service staff</li>
+                        <li><i class="fas fa-check-circle"></i> Special occasion decorations available</li>
+                    </ul>
+                    <div class="working-hours">
+                        <h4>Working Hours</h4>
+                        <p><strong>Monday - Saturday:</strong> 12:00 PM - 09:00 PM</p>
+                        <p><strong>Sunday:</strong> 11:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Infront of HDFC Bank, Matoshri Chowk, Risod, Washim,  444506</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 70208 74792</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rahulmadke4542@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/shivkrupa_chaat_hub"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://wa.me/917020874792"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group half">
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span>ShivKrupa</span> ChaatHub</h2>
+                    <p>Bringing the authentic taste of Indian street food to your plate since 2015.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Menu</h4>
+                    <ul>
+                        <li><a href="#">Panipuri</a></li>
+                        <li><a href="#">Dahipuri</a></li>
+                        <li><a href="#">Sevpuri</a></li>
+                        <li><a href="#">Bhel Puri</a></li>
+                        <li><a href="#">Pav Bhaji</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new items and special offers.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShivKrupa ChaatHub. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Order</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <!-- Cart items will be added here dynamically -->
+                    <p class="empty-cart">Your cart is empty.</p>
+                </div>
+                <div class="cart-total">
+                    <h4>Total: <span id="totalAmount">₹0</span></h4>
+                </div>
+                <div class="checkout-btn">
+                    <button id="checkoutBtn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content quick-view-content">
+            <div class="modal-header">
+                <h3 id="quickViewTitle">Item Details</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="quick-view-container">
+                    <div class="quick-view-image">
+                        <img id="quickViewImg" src="" alt="Item Image">
+                    </div>
+                    <div class="quick-view-details">
+                        <p id="quickViewDesc">Description will appear here.</p>
+                        <div class="quick-view-price">
+                            <h4>Price: <span id="quickViewPrice">₹0</span></h4>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button id="decreaseQty">-</button>
+                                <input type="number" id="itemQuantity" value="1" min="1" max="20">
+                                <button id="increaseQty">+</button>
+                            </div>
+                        </div>
+                        <button id="addToCartFromModal" class="btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content order-content">
+            <div class="modal-header">
+                <h3>Complete Your Order</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="customerName">Full Name</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address</label>
+                        <input type="email" id="customerEmail" name="customerEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryAddress">Delivery Address</label>
+                        <textarea id="deliveryAddress" name="deliveryAddress" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderType">Order Type</label>
+                        <select id="orderType" name="orderType" required>
+                            <option value="delivery">Delivery</option>
+                            <option value="pickup">Pickup</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="pickupTimeGroup" style="display: none;">
+                        <label for="pickupTime">Preferred Pickup Time</label>
+                        <input type="time" id="pickupTime" name="pickupTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="cash">Cash on Delivery/Pickup</option>
+                            <option value="online">Online Payment</option>
+                        </select>
+                    </div>
+                    <div class="order-summary">
+                        <h4>Order Summary</h4>
+                        <div id="orderItemsSummary">
+                            <!-- Order items will be listed here -->
+                        </div>
+                        <div class="order-total">
+                            <h4>Total Amount: <span id="orderTotalAmount">₹0</span></h4>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-content">
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Success!</h3>
+                <p id="successMessage">Your action was completed successfully.</p>
+                <button id="successOkBtn" class="btn-primary">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Signup Modal -->
+<div class="modal" id="signupModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Sign Up</h3>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-body">
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Full Name" required />
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Create Account</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Login</h3>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-body">
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <script src="one.js"></script>
+</body>
+</html>
